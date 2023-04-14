@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Validate input value",
+      "setup": "npm install",
+      "run": "cd classrooms/io-ts && npm test -- -m \"unsafeParseUser\" -m \"ComplexObject\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Phantom types and smart constructors",
+      "setup": "npm install",
+      "run": "cd classrooms/io-ts && npm test -- -m \"Palindrome\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Generic types",
+      "setup": "npm install",
+      "run": "cd classrooms/io-ts && npm test -- -m \"CustomResult\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Custom types",
+      "setup": "npm install",
+      "run": "cd classrooms/io-ts && npm test -- -m \"StringToNumber\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pipe combinator",
+      "setup": "npm install",
+      "run": "cd classrooms/io-ts && npm test -- -m \"ProductFromBase64JSON\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
