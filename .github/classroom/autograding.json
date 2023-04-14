@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test suite",
+      "setup": "npm install",
+      "run": "classrooms/io-ts && npm test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
