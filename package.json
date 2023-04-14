@@ -1,0 +1,38 @@
+{
+  "name": "@coorpacademy/classroom",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "./classrooms/*"
+  ],
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "dependencies": {
+    "xo": "^0.54.0"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "rules": {
+      "@typescript-eslint/ban-types": "off",
+      "@typescript-eslint/naming-convention": "off",
+      "@typescript-eslint/no-redeclare": "off",
+      "@typescript-eslint/no-unnecessary-type-arguments": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "max-len": [
+        "error",
+        {
+          "code": 100
+        }
+      ],
+      "new-cap": "off",
+      "no-constant-condition": "off",
+      "no-warning-comments": "off",
+      "unicorn/no-array-for-each": "off"
+    }
+  }
+}

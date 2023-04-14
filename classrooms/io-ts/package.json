@@ -1,0 +1,30 @@
+{
+  "name": "@coorpacademy/classroom-io-ts",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "ava -svw --fail-fast",
+    "test": "ava",
+    "posttest": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "ava": "^5.2.0",
+    "fp-ts": "^2.13.1",
+    "io-ts": "^2.2.20",
+    "ts-node": "^10.9.1"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--no-warnings",
+      "--loader=ts-node/esm",
+      "--experimental-specifier-resolution=node"
+    ],
+    "files": [
+      "index.ts"
+    ]
+  }
+}

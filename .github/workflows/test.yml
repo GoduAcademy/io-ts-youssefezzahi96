@@ -1,0 +1,26 @@
+name: 👮 Continuous integration
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source 📡
+        uses: actions/checkout@v3
+      - name: Get NPM cache directory
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Setup node 🔨
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install 🔧
+        run: npm ci
+      - name: Test 🔬
+        run: npx xo
